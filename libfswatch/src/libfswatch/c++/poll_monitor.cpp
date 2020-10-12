@@ -127,6 +127,7 @@ namespace fsw
     struct stat fd_stat;
     if (!lstat_path(path, fd_stat)) return;
 
+#ifndef _WIN32
     if (follow_symlinks && S_ISLNK(fd_stat.st_mode))
     {
       string link_path;
@@ -135,6 +136,7 @@ namespace fsw
 
       return;
     }
+#endif
 
     if (!accept_path(path)) return;
     if (!add_path(path, fd_stat, fn)) return;

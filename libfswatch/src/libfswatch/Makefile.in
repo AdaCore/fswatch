@@ -113,18 +113,18 @@ target_triplet = @target@
 @USE_KQUEUE_TRUE@am__append_2 = c++/kqueue_monitor.cpp
 @USE_FEN_TRUE@am__append_3 = c++/fen_monitor.cpp
 @USE_INOTIFY_TRUE@am__append_4 = c++/inotify_monitor.cpp
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@am__append_5 =  \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows_monitor.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_handle.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_handle.hpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_error_message.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_error_message.hpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_strings.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_strings.hpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_paths.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_paths.hpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.cpp \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.hpp
+@USE_WINDOWS_TRUE@am__append_5 =  \
+@USE_WINDOWS_TRUE@	c++/windows_monitor.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_handle.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_handle.hpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_error_message.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_error_message.hpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_strings.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_strings.hpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_paths.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_paths.hpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.cpp \
+@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.hpp
 @BUILD_WIN_REALPATH_TRUE@@USE_WINDOWS_TRUE@am__append_6 = c/windows/realpath.c
 @OS_CYGWIN_TRUE@am__append_7 = -no-undefined
 @USE_FSEVENTS_TRUE@am__append_8 = -framework CoreServices
@@ -218,13 +218,13 @@ am__dirstamp = $(am__leading_dot)dirstamp
 @USE_KQUEUE_TRUE@am__objects_2 = c++/kqueue_monitor.lo
 @USE_FEN_TRUE@am__objects_3 = c++/fen_monitor.lo
 @USE_INOTIFY_TRUE@am__objects_4 = c++/inotify_monitor.lo
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@am__objects_5 =  \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows_monitor.lo \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_handle.lo \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_error_message.lo \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_strings.lo \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_paths.lo \
-@USE_CYGWIN_TRUE@@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.lo
+@USE_WINDOWS_TRUE@am__objects_5 =  \
+@USE_WINDOWS_TRUE@	c++/windows_monitor.lo \
+@USE_WINDOWS_TRUE@	c++/windows/win_handle.lo \
+@USE_WINDOWS_TRUE@	c++/windows/win_error_message.lo \
+@USE_WINDOWS_TRUE@	c++/windows/win_strings.lo \
+@USE_WINDOWS_TRUE@	c++/windows/win_paths.lo \
+@USE_WINDOWS_TRUE@	c++/windows/win_directory_change_event.lo
 @BUILD_WIN_REALPATH_TRUE@@USE_WINDOWS_TRUE@am__objects_6 = c/windows/realpath.lo
 am_libfswatch_la_OBJECTS = c/cevent.lo c/libfswatch.lo \
 	c/libfswatch_log.lo c++/libfswatch_exception.lo c++/event.lo \
